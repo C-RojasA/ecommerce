@@ -10,14 +10,16 @@ export function loadCartItems () {
   }
 }
 
-export function addCartItem () {
+export function addCartItem (item) {
   return {
-    type: ADD_CART_ITEM
+    type: ADD_CART_ITEM,
+    payload: item
   }
 }
 
-export function removeCartItem () {
+export function removeCartItem (itemId) {
   return {
-    type: REMOVE_CART_ITEM
+    type: REMOVE_CART_ITEM,
+    payload: itemId
   }
 }
